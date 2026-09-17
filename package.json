@@ -1,0 +1,42 @@
+{
+  "name": "dev-consumer-pink_cerebro",
+  "version": "1.0.6",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "clear && rm -rf dist && tsc",
+    "dev": "ts-node src/index.ts",
+    "start": "tsc && node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/henriqueserra/evest-dev-consumer-pink_cerebro.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/henriqueserra/evest-dev-consumer-pink_cerebro/issues"
+  },
+  "homepage": "https://github.com/henriqueserra/evest-dev-consumer-pink_cerebro#readme",
+  "devDependencies": {
+    "@types/node": "^24",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3",
+    "@aws-sdk/client-sqs": "^3",
+    "@aws-sdk/s3-request-presigner": "^3",
+    "aws-lambda": "^1.0.7",
+    "axios": "^1.13.2",
+    "dotenv": "^17.2.3",
+    "lodash": "^4.17.21",
+    "openai": "^6.8.1",
+    "pg": "^8.16.3",
+    "reflect-metadata": "^0.2.2",
+    "typeorm": "^0.3.27",
+    "zod": "^4.1.12"
+  }
+}
