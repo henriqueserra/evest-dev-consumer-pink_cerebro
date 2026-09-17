@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "strict": true, // Enforces best practices
+    "module": "commonjs", // CommonJS module system for Node.js
+    "target": "ESNext", // Modern JavaScript for maximum features
+    "outDir": "./dist", // Output directory
+    "rootDir": "./src", // Ensures relative paths remain clean
+    "declaration": true, // Generate `.d.ts` files for type definitions
+    "sourceMap": true, // Include source maps for debugging
+    "removeComments": true, // Strips comments in compiled files
+    "emitDecoratorMetadata": true, // Required for decorators in Nest.js/Angular
+    "experimentalDecorators": true, // Enable experimental decorators
+    "allowSyntheticDefaultImports": true, // Import default CommonJS modules
+    "esModuleInterop": true, // Simplifies imports for CommonJS compatibility
+    "skipLibCheck": true, // Speeds up compilation by skipping library type checks
+    "resolveJsonModule": true, // Allows importing JSON files as modules
+    "forceConsistentCasingInFileNames": true, // Prevents case-sensitive import errors
+    /* Enable "strict mode" features */
+    "strictNullChecks": true, // Catch nullable value issues
+    "noImplicitAny": false, // Ensure all types are defined
+    "strictBindCallApply": true, // Enforces strict function calls
+    "noFallthroughCasesInSwitch": true, // Prevent fallthrough in switch statements
+    /* Extra */
+    "checkJs": true, // Ensures only TypeScript files are checked
+    "typeRoots": ["./node_modules/@types"], // Looks for custom/global typings
+    "baseUrl": "./" // Simplifies import paths
+  },
+  "include": ["src/**/*"], // Include the `src` directory
+  "exclude": ["node_modules", "**/*.test.ts"] // Exclude unnecessary files
+}
